@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <body>
+        <h1 class="menu">Menu</h1>
+        <div class="grid">
+          <div class="two">
+
+            <h2>Pizza by the slice ($2)</h2>
+            <input type="number" id="sop">
+            <h2>Toppings</h2>
+            <p class="titles">Per Pepperoni($0.25):</p> <input type="number" id="qty_pepperoni">
+            <p class="titles">Per Meatball($0.35):</p> <input type="number" id="qty_meatballs">
+            <p class="titles">Per Mushhroom($0.40):</p> <input type="number" id="qty_mushrooms">
+            <p class="titles">Per Olive($0.20):</p> <input type="number" id="qty_olives">
+          </div>
+        
+          <div class="one">
+            <h2>Sides</h2>
+            <p class="titles">Potato Salad($1.25):</p> <input type="number" id="qty_potato salad">
+            <p class="titles">Humus($2.50):</p> <input type="number" id="qty_hummus">
+            <p class="titles">Caesar Salad($3.50):</p> <input type="number" id="qty_caesar salad">
+            <p class="titles">Garden Salad($2.25):</p> <input type="number" id="qty_garden salad">
+          </div>
+        
+          <div class="three">
+            <h2>Drinks</h2>
+            <div>
+              <p class="titles">Small Soda($1.95):</p> <input type="number" id="qty_small">
+              <p class="titles">Medium Soda($2.20):</p> <input type="number" id="qty_medium">
+              <p class="titles">Large Soda($2.50):</p> <input type="number" id="qty_large">
+            </div>
+            
+            <p class="titles">Juice($2.00):</p> <input type="number" id="qty_juice">
+            <p class="titles">Water($1.25):</p> <input type="number" id="qty_water">
+        
+          </div>
+        </div><br>
+        <div class="button">
+          <button class="button" id="submitOrder">Your Order</button>
+        </div>
+        </body>
+        <script>
+
+
+let button = document.getElementById('submitOrder');
+button.onclick = function() {
+
+              const slice = document.getElementById('sop');
+              if(slice.value > 0) {
+                alert(slice.value);
+            }
+               const top = document.getElementById('qty_pepperoni');
+              if(top.value > 0) {
+                alert(top.value);
+              
+              
+            }
+
+}
+
+   
+
+
+
+
+</script>
+    </head>
+</html>
